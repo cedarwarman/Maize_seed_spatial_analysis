@@ -69,7 +69,7 @@ def parse_xml(input_xml):
 
 	# Convert to pandas dataframe
 	return_df = pd.DataFrame(return_df,
-							columns=['ear_name', 'seed_type', 'x_coord', 'y_coord'])
+								columns=['ear_name', 'seed_type', 'x_coord', 'y_coord'])
 
 	# Converting coord columns to numerics
 	return_df['x_coord'] = pd.to_numeric(return_df['x_coord'])
@@ -90,3 +90,5 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.axis('equal')
 plt.ylim(0, 750)
 plt.show()
+
+# Test comment
